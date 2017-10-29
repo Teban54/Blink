@@ -1,0 +1,1604 @@
+.App { /* Base font style */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 15.1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0, 0, 0, 0.8500);
+}
+
+.App .baseFont * { /* Base font style override for UI framework components */
+  font-size: 15.1px;
+}
+
+.App .baseTextBg { /* Base text color as background */
+  background-color: rgba(0, 0, 0, 0.8500);
+}
+
+.App .secondaryTextColor {
+  color: rgba(0, 0, 0, 0.5000);
+}
+
+.App .secondaryTextBg {
+  background-color: rgba(0, 0, 0, 0.5000);
+}
+
+.App .primaryTextColor {
+  color: #bfeaee;
+}
+
+.App .primaryBg {
+  background-color: #bfeaee;
+}
+
+.App .highlightTextColor {
+  color: #0091d5;
+}
+
+.App .highlightBg {
+  background-color: #0091d5;
+}
+
+/* Styles to customize the UI framework plugin (MUI, https://muicss.com) */
+.mui-btn {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mui-btn--primary {
+    background-color: #bfeaee;
+}
+.mui-btn--primary:active, .mui-btn--primary:focus, .mui-btn--primary:hover {
+    background-color: #c6ecef;
+}
+.mui-btn--accent {
+    background-color: #0091d5;
+}
+.mui-btn--accent:active, .mui-btn--accent:focus, .mui-btn--accent:hover {
+    background-color: #199cd9;
+}
+.mui-textfield {  /* Reset UI framework styling that affects layout */
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.mui-btn+.mui-btn {  /* Reset UI framework styling that affects layout */
+    margin-left: 0;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@keyframes slideIn_right {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+@keyframes slideIn_bottom {
+    0%   { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+/* App-wide text styles specified in React Studio */
+.App .actionFont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 14.2px;
+  font-weight: 400;
+}
+.App .actionFont * {
+  font-size: 14.2px;
+}
+.App .headlineFont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 19.4px;
+  font-weight: 400;
+}
+
+.App .headlineFont * {
+  font-size: 19.4px;
+}
+.App .navBar {
+  background-color: #bfeaee;
+  color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+.App .navBar a {
+  color: black;
+}
+
+.App .navBar .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  margin-top: 14px;
+}
+
+.App .navBar .backBtn {
+  position: absolute;
+  padding: 4px;
+  margin-left: 14px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .mui-container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 568px) {
+  .mui-container {
+    max-width: 568px;
+  }
+}
+@media (min-width: 768px) {
+  .mui-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .mui-container {
+    max-width: 1024px;
+  }
+}
+
+.AppScreen {
+  padding-left: 0;
+  padding-right: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.App .background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App .layoutFlow {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  float: left;
+}
+.App .layoutFlow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.App .layoutFlow .flowRow {
+  position: relative;
+  width: 100%;
+}
+
+.App .screenFgContainer {
+  /* Items in the foreground group within a screen are placed with fixed positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.App .foreground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.App .compContent {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.App ul {
+  margin: 0;
+  padding: 0;
+}
+.App li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+.App .hasNestedComps {
+  position: relative;
+}
+.App .hasNestedComps:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.App .hasNestedComps .background {
+  position: absolute;
+}
+.App .hasNestedComps .layoutFlow {
+  position: relative;
+}
+.App .hasNestedComps .foreground {
+  position: absolute;
+}
+.App .bottomAlignedContent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elSendMoney {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elSendMoney {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elSendMoney {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elSendMoney {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 34px;
+    position: absolute;
+    left: 0px;
+    top: 516px;
+    width: 322px;
+    height: 34px;
+  }
+@media (min-width: 568px) {
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 34px;
+    left: 0px;
+    top: 516px;
+    width: 322px;
+    height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 33px;
+    left: 0px;
+    top: 512px;
+    width: 320px;
+    height: 33px;
+  }
+}
+@media (min-width: 1024px) {
+  .SendMoneyScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 33px;
+    left: 0px;
+    top: 512px;
+    width: 320px;
+    height: 33px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    position: absolute;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    position: absolute;
+    left: 205px;
+    top: 250px;
+    width: 115px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    left: 205px;
+    top: 250px;
+    width: 115px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 114px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 114px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    position: absolute;
+    left: 24px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    left: 24px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 24px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 24px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    position: absolute;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+@media (min-width: 568px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+}
+@media (min-width: 768px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+}
+@media (min-width: 1024px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    position: absolute;
+    left: 18px;
+    top: 492px;
+    width: 285px;
+    height: 58px;
+  }
+@media (min-width: 568px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    left: 18px;
+    top: 492px;
+    width: 285px;
+    height: 58px;
+  }
+}
+@media (min-width: 768px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    left: 18px;
+    top: 490px;
+    width: 283px;
+    height: 58px;
+  }
+}
+@media (min-width: 1024px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    left: 18px;
+    top: 490px;
+    width: 283px;
+    height: 58px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    position: absolute;
+    left: 256px;
+    top: 490px;
+    width: 54px;
+    height: 59px;
+  }
+@media (min-width: 568px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    left: 256px;
+    top: 490px;
+    width: 54px;
+    height: 59px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    left: 254px;
+    top: 487px;
+    width: 54px;
+    height: 59px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    left: 254px;
+    top: 487px;
+    width: 54px;
+    height: 59px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AlertsScreen > .background > .elBackgroundShape {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+@media (min-width: 568px) {
+  .AlertsScreen > .background > .elBackgroundShape {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .AlertsScreen > .background > .elBackgroundShape {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .AlertsScreen > .background > .elBackgroundShape {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AlertsScreen > .screenFgContainer > .foreground > .elAlert {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elAlert {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elAlert {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elAlert {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AlertsScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 83px;
+    left: 114px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 82px;
+    left: 114px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 82px;
+    left: 114px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    position: absolute;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    position: absolute;
+    left: 26px;
+    top: 329px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    left: 26px;
+    top: 329px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 26px;
+    top: 327px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 26px;
+    top: 327px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    position: absolute;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AlertsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 329px;
+    position: absolute;
+    left: 22px;
+    top: 112px;
+    width: 273px;
+    height: 329px;
+  }
+@media (min-width: 568px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 329px;
+    left: 22px;
+    top: 112px;
+    width: 273px;
+    height: 329px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 327px;
+    left: 22px;
+    top: 111px;
+    width: 271px;
+    height: 327px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 327px;
+    left: 22px;
+    top: 111px;
+    width: 271px;
+    height: 327px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AllowanceScreen > .screenFgContainer > .foreground > .elDrillDrownCopy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elDrillDrownCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elDrillDrownCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elDrillDrownCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    position: absolute;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 83px;
+    left: 114px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 82px;
+    left: 114px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 82px;
+    left: 114px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    position: absolute;
+    left: 205px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    left: 205px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    position: absolute;
+    left: 23px;
+    top: 332px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    left: 23px;
+    top: 332px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 23px;
+    top: 330px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .AllowanceScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 23px;
+    top: 330px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .background > .elBackgroundShape {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .background > .elBackgroundShape {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .background > .elBackgroundShape {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .background > .elBackgroundShape {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60130PM {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60130PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60130PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60130PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    position: absolute;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 83px;
+    left: 114px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 82px;
+    left: 114px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 82px;
+    left: 114px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    position: absolute;
+    left: 205px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    left: 205px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    position: absolute;
+    left: 23px;
+    top: 332px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    left: 23px;
+    top: 332px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 23px;
+    top: 330px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 23px;
+    top: 330px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    position: absolute;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
