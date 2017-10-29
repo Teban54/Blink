@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import img_elGoalsOverviewCopy from './images/GoalsOverviewScreen_elGoalsOverviewCopy.jpg';
-import btn_icon_back_goalsoverview from './images/btn_icon_back_goalsoverview.png';
 
 // UI framework component imports
 import Button from 'muicss/lib/react/button';
-import Appbar from 'muicss/lib/react/appbar';
 
 
 export default class GoalsOverviewScreen extends Component {
@@ -36,19 +34,17 @@ export default class GoalsOverviewScreen extends Component {
     const style_button = {
         display: 'block',
         backgroundColor: 'transparent',
-        color: 'white',
+        color: 'transparent',
         textAlign: 'center',
         cursor: 'pointer',
      };
     
     return (
       <div className="AppScreen GoalsOverviewScreen" style={baseStyle}>
-        <Appbar className="navBar">
-          <div className="title">Goals Overview</div>  <div className="backBtn" onClick={ (ev)=>{ this.props.appActions.goBack() } }><img src={btn_icon_back_goalsoverview} alt="" style={{width: '50%'}} /></div></Appbar>
         <div className="screenFgContainer">
           <div className="foreground">
             <div className='containerMinHeight elGoalsOverviewCopy' style={style_goalsOverviewCopy} />
-            <Button className='actionFont elButton' style={style_button}  onClick={this.onClick_button} >
+            <Button className='actionFont elButton' style={style_button}  variant="flat" onClick={this.onClick_button} >
               &#xA;
             </Button>
           </div>

@@ -73,7 +73,7 @@ export default class StartScreen extends Component {
     const style_buttonCopy2 = {
         display: 'block',
         backgroundColor: 'transparent',
-        color: 'white',
+        color: 'transparent',
         textAlign: 'center',
         display: 'none',
         cursor: 'pointer',
@@ -122,7 +122,7 @@ export default class StartScreen extends Component {
         <div className="screenFgContainer">
           <div className="foreground">
             <div className='containerMinHeight elScreenShot20171028At60130PM' style={style_screenShot20171028At60130PM} />
-            <Button className='actionFont elButtonCopy2' style={style_buttonCopy2}  onClick={this.onClick_buttonCopy2} >
+            <Button className='actionFont elButtonCopy2' style={style_buttonCopy2}  variant="flat" onClick={this.onClick_buttonCopy2} >
               &#xA;
             </Button>
             <Button className='actionFont elButton' style={style_button}  onClick={this.onClick_button}  />

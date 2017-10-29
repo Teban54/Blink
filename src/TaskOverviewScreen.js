@@ -41,7 +41,7 @@ export default class TaskOverviewScreen extends Component {
     const style_button2 = {
         display: 'block',
         backgroundColor: 'transparent',
-        color: 'white',
+        color: 'transparent',
         textAlign: 'center',
         cursor: 'pointer',
      };
@@ -58,7 +58,7 @@ export default class TaskOverviewScreen extends Component {
         <div className="screenFgContainer">
           <div className="foreground">
             <div className='containerMinHeight elTasksCopy' style={style_tasksCopy} />
-            <Button className='actionFont elButton2' style={style_button2}  onClick={this.onClick_button2} >
+            <Button className='actionFont elButton2' style={style_button2}  variant="flat" onClick={this.onClick_button2} >
               &#xA;
             </Button>
             <Button className='actionFont elButton3' style={style_button3}  onClick={this.onClick_button3} >

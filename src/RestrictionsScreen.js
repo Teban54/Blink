@@ -62,7 +62,7 @@ export default class RestrictionsScreen extends Component {
     const style_buttonCopy = {
         display: 'block',
         backgroundColor: 'transparent',
-        color: 'white',
+        color: 'transparent',
         textAlign: 'center',
         cursor: 'pointer',
      };
@@ -100,7 +100,7 @@ export default class RestrictionsScreen extends Component {
         <div className="screenFgContainer">
           <div className="foreground">
             <div className='containerMinHeight elScreenShot20171028At60007PM' style={style_screenShot20171028At60007PM} />
-            <Button className='actionFont elButtonCopy' style={style_buttonCopy}  onClick={this.onClick_buttonCopy} >
+            <Button className='actionFont elButtonCopy' style={style_buttonCopy}  variant="flat" onClick={this.onClick_buttonCopy} >
               &#xA;
             </Button>
             <Button className='actionFont elButtonCopy2' style={style_buttonCopy2}  onClick={this.onClick_buttonCopy2}  />

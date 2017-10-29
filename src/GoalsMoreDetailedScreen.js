@@ -36,7 +36,7 @@ export default class GoalsMoreDetailedScreen extends Component {
     const style_button = {
         display: 'block',
         backgroundColor: 'transparent',
-        color: 'white',
+        color: 'transparent',
         textAlign: 'center',
         cursor: 'pointer',
      };
@@ -48,7 +48,7 @@ export default class GoalsMoreDetailedScreen extends Component {
         <div className="screenFgContainer">
           <div className="foreground">
             <div className='containerMinHeight elGoalsDetailCopy' style={style_goalsDetailCopy} />
-            <Button className='actionFont elButton' style={style_button}  onClick={this.onClick_button}  />
+            <Button className='actionFont elButton' style={style_button}  variant="flat" onClick={this.onClick_button}  />
           </div>
         </div>
       </div>

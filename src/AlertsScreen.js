@@ -66,7 +66,7 @@ export default class AlertsScreen extends Component {
     const style_button = {
         display: 'block',
         backgroundColor: 'transparent',
-        color: 'white',
+        color: 'transparent',
         textAlign: 'center',
         cursor: 'pointer',
      };
@@ -107,7 +107,7 @@ export default class AlertsScreen extends Component {
         <div className="screenFgContainer">
           <div className="foreground">
             <div className='containerMinHeight elAlert' style={style_alert} />
-            <Button className='actionFont elButton' style={style_button}  onClick={this.onClick_button}  />
+            <Button className='actionFont elButton' style={style_button}  variant="flat" onClick={this.onClick_button}  />
             <Button className='actionFont elButtonCopy' style={style_buttonCopy}  onClick={this.onClick_buttonCopy} >
               &#xA;
             </Button>
