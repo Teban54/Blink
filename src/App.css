@@ -312,6 +312,272 @@
 
 
 /* Narrowest size for this element's responsive layout */
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    position: absolute;
+    left: 256px;
+    top: 490px;
+    width: 54px;
+    height: 59px;
+  }
+@media (min-width: 568px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    left: 256px;
+    top: 490px;
+    width: 54px;
+    height: 59px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    left: 254px;
+    top: 487px;
+    width: 54px;
+    height: 59px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 59px;
+    left: 254px;
+    top: 487px;
+    width: 54px;
+    height: 59px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 329px;
+    position: absolute;
+    left: 22px;
+    top: 112px;
+    width: 273px;
+    height: 329px;
+  }
+@media (min-width: 568px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 329px;
+    left: 22px;
+    top: 112px;
+    width: 273px;
+    height: 329px;
+  }
+}
+@media (min-width: 768px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 327px;
+    left: 22px;
+    top: 111px;
+    width: 271px;
+    height: 327px;
+  }
+}
+@media (min-width: 1024px) {
+  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
+    line-height: 327px;
+    left: 22px;
+    top: 111px;
+    width: 271px;
+    height: 327px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+@media (min-width: 568px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+}
+@media (min-width: 768px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+}
+@media (min-width: 1024px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
+    line-height: 53px;
+    left: 0px;
+    top: 0px;
+    width: 46px;
+    height: 53px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    position: absolute;
+    left: 18px;
+    top: 492px;
+    width: 285px;
+    height: 58px;
+  }
+@media (min-width: 568px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    left: 18px;
+    top: 492px;
+    width: 285px;
+    height: 58px;
+  }
+}
+@media (min-width: 768px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    left: 18px;
+    top: 490px;
+    width: 283px;
+    height: 58px;
+  }
+}
+@media (min-width: 1024px) {
+  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
+    line-height: 58px;
+    left: 18px;
+    top: 490px;
+    width: 283px;
+    height: 58px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
   .AllowanceScreen > .screenFgContainer > .foreground > .elDrillDrownCopy {
     position: absolute;
     left: 0px;
@@ -533,6 +799,234 @@
     line-height: 82px;
     left: 23px;
     top: 330px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 548px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1004px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 748px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    position: absolute;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 83px;
+    left: 24px;
+    top: 250px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
+    line-height: 82px;
+    left: 24px;
+    top: 248px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    position: absolute;
+    left: 205px;
+    top: 250px;
+    width: 115px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 83px;
+    left: 205px;
+    top: 250px;
+    width: 115px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 114px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
+    line-height: 82px;
+    left: 204px;
+    top: 248px;
+    width: 114px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    position: absolute;
+    left: 24px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 83px;
+    left: 24px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 24px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
+    line-height: 82px;
+    left: 24px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    position: absolute;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 83px;
+    left: 114px;
+    top: 328px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
+    line-height: 82px;
+    left: 114px;
+    top: 326px;
+    width: 90px;
+    height: 82px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    position: absolute;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+@media (min-width: 568px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 83px;
+    left: 202px;
+    top: 326px;
+    width: 91px;
+    height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
+    width: 90px;
+    height: 82px;
+  }
+}
+@media (min-width: 1024px) {
+  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
+    line-height: 82px;
+    left: 201px;
+    top: 324px;
     width: 90px;
     height: 82px;
   }
@@ -801,500 +1295,6 @@
     top: 324px;
     width: 90px;
     height: 82px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 548px;
-  }
-@media (min-width: 568px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 300px;
-  }
-}
-@media (min-width: 768px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 1004px;
-  }
-}
-@media (min-width: 1024px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elTasksCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 748px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
-    line-height: 53px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 46px;
-    height: 53px;
-  }
-@media (min-width: 568px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
-    line-height: 53px;
-    left: 0px;
-    top: 0px;
-    width: 46px;
-    height: 53px;
-  }
-}
-@media (min-width: 768px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
-    line-height: 53px;
-    left: 0px;
-    top: 0px;
-    width: 46px;
-    height: 53px;
-  }
-}
-@media (min-width: 1024px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton2 {
-    line-height: 53px;
-    left: 0px;
-    top: 0px;
-    width: 46px;
-    height: 53px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
-    line-height: 58px;
-    position: absolute;
-    left: 18px;
-    top: 492px;
-    width: 285px;
-    height: 58px;
-  }
-@media (min-width: 568px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
-    line-height: 58px;
-    left: 18px;
-    top: 492px;
-    width: 285px;
-    height: 58px;
-  }
-}
-@media (min-width: 768px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
-    line-height: 58px;
-    left: 18px;
-    top: 490px;
-    width: 283px;
-    height: 58px;
-  }
-}
-@media (min-width: 1024px) {
-  .TaskOverviewScreen > .screenFgContainer > .foreground > .elButton3 {
-    line-height: 58px;
-    left: 18px;
-    top: 490px;
-    width: 283px;
-    height: 58px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 548px;
-  }
-@media (min-width: 568px) {
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 300px;
-  }
-}
-@media (min-width: 768px) {
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 1004px;
-  }
-}
-@media (min-width: 1024px) {
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elGoalsDetailCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 748px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 59px;
-    position: absolute;
-    left: 256px;
-    top: 490px;
-    width: 54px;
-    height: 59px;
-  }
-@media (min-width: 568px) {
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 59px;
-    left: 256px;
-    top: 490px;
-    width: 54px;
-    height: 59px;
-  }
-}
-@media (min-width: 768px) {
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 59px;
-    left: 254px;
-    top: 487px;
-    width: 54px;
-    height: 59px;
-  }
-}
-@media (min-width: 1024px) {
-  .GoalsMoreDetailedScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 59px;
-    left: 254px;
-    top: 487px;
-    width: 54px;
-    height: 59px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 548px;
-  }
-@media (min-width: 568px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 300px;
-  }
-}
-@media (min-width: 768px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 1004px;
-  }
-}
-@media (min-width: 1024px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elScreenShot20171028At60007PM {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 748px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
-    line-height: 83px;
-    position: absolute;
-    left: 24px;
-    top: 250px;
-    width: 91px;
-    height: 83px;
-  }
-@media (min-width: 568px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
-    line-height: 83px;
-    left: 24px;
-    top: 250px;
-    width: 91px;
-    height: 83px;
-  }
-}
-@media (min-width: 768px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
-    line-height: 82px;
-    left: 24px;
-    top: 248px;
-    width: 90px;
-    height: 82px;
-  }
-}
-@media (min-width: 1024px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy {
-    line-height: 82px;
-    left: 24px;
-    top: 248px;
-    width: 90px;
-    height: 82px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
-    line-height: 83px;
-    position: absolute;
-    left: 205px;
-    top: 250px;
-    width: 115px;
-    height: 83px;
-  }
-@media (min-width: 568px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
-    line-height: 83px;
-    left: 205px;
-    top: 250px;
-    width: 115px;
-    height: 83px;
-  }
-}
-@media (min-width: 768px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
-    line-height: 82px;
-    left: 204px;
-    top: 248px;
-    width: 114px;
-    height: 82px;
-  }
-}
-@media (min-width: 1024px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy2 {
-    line-height: 82px;
-    left: 204px;
-    top: 248px;
-    width: 114px;
-    height: 82px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
-    line-height: 83px;
-    position: absolute;
-    left: 24px;
-    top: 328px;
-    width: 91px;
-    height: 83px;
-  }
-@media (min-width: 568px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
-    line-height: 83px;
-    left: 24px;
-    top: 328px;
-    width: 91px;
-    height: 83px;
-  }
-}
-@media (min-width: 768px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
-    line-height: 82px;
-    left: 24px;
-    top: 326px;
-    width: 90px;
-    height: 82px;
-  }
-}
-@media (min-width: 1024px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy3 {
-    line-height: 82px;
-    left: 24px;
-    top: 326px;
-    width: 90px;
-    height: 82px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
-    line-height: 83px;
-    position: absolute;
-    left: 114px;
-    top: 328px;
-    width: 91px;
-    height: 83px;
-  }
-@media (min-width: 568px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
-    line-height: 83px;
-    left: 114px;
-    top: 328px;
-    width: 91px;
-    height: 83px;
-  }
-}
-@media (min-width: 768px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
-    line-height: 82px;
-    left: 114px;
-    top: 326px;
-    width: 90px;
-    height: 82px;
-  }
-}
-@media (min-width: 1024px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy4 {
-    line-height: 82px;
-    left: 114px;
-    top: 326px;
-    width: 90px;
-    height: 82px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
-    line-height: 83px;
-    position: absolute;
-    left: 202px;
-    top: 326px;
-    width: 91px;
-    height: 83px;
-  }
-@media (min-width: 568px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
-    line-height: 83px;
-    left: 202px;
-    top: 326px;
-    width: 91px;
-    height: 83px;
-  }
-}
-@media (min-width: 768px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
-    line-height: 82px;
-    left: 201px;
-    top: 324px;
-    width: 90px;
-    height: 82px;
-  }
-}
-@media (min-width: 1024px) {
-  .RestrictionsScreen > .screenFgContainer > .foreground > .elButtonCopy5 {
-    line-height: 82px;
-    left: 201px;
-    top: 324px;
-    width: 90px;
-    height: 82px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 548px;
-  }
-@media (min-width: 568px) {
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 300px;
-  }
-}
-@media (min-width: 768px) {
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 1004px;
-  }
-}
-@media (min-width: 1024px) {
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elGoalsOverviewCopy {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    height: 748px;
-  }
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 329px;
-    position: absolute;
-    left: 22px;
-    top: 112px;
-    width: 273px;
-    height: 329px;
-  }
-@media (min-width: 568px) {
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 329px;
-    left: 22px;
-    top: 112px;
-    width: 273px;
-    height: 329px;
-  }
-}
-@media (min-width: 768px) {
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 327px;
-    left: 22px;
-    top: 111px;
-    width: 271px;
-    height: 327px;
-  }
-}
-@media (min-width: 1024px) {
-  .GoalsOverviewScreen > .screenFgContainer > .foreground > .elButton {
-    line-height: 327px;
-    left: 22px;
-    top: 111px;
-    width: 271px;
-    height: 327px;
   }
 }
 

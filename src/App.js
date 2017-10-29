@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import SendMoneyScreen from './SendMoneyScreen.js';
-import AllowanceScreen from './AllowanceScreen.js';
-import AlertsScreen from './AlertsScreen.js';
-import TaskOverviewScreen from './TaskOverviewScreen.js';
 import GoalsMoreDetailedScreen from './GoalsMoreDetailedScreen.js';
-import RestrictionsScreen from './RestrictionsScreen.js';
 import GoalsOverviewScreen from './GoalsOverviewScreen.js';
+import TaskOverviewScreen from './TaskOverviewScreen.js';
+import AllowanceScreen from './AllowanceScreen.js';
+import RestrictionsScreen from './RestrictionsScreen.js';
+import AlertsScreen from './AlertsScreen.js';
 import StartScreen from './StartScreen.js';
 
 
@@ -103,18 +103,18 @@ export default class App extends Component {
         return null;
       case 'sendmoney':
         return (<SendMoneyScreen {...screenProps} />)
-      case 'allowance':
-        return (<AllowanceScreen {...screenProps} />)
-      case 'alerts':
-        return (<AlertsScreen {...screenProps} />)
-      case 'taskoverview':
-        return (<TaskOverviewScreen {...screenProps} />)
       case 'goalsmoredetailed':
         return (<GoalsMoreDetailedScreen {...screenProps} />)
-      case 'restrictions':
-        return (<RestrictionsScreen {...screenProps} />)
       case 'goalsoverview':
         return (<GoalsOverviewScreen {...screenProps} />)
+      case 'taskoverview':
+        return (<TaskOverviewScreen {...screenProps} />)
+      case 'allowance':
+        return (<AllowanceScreen {...screenProps} />)
+      case 'restrictions':
+        return (<RestrictionsScreen {...screenProps} />)
+      case 'alerts':
+        return (<AlertsScreen {...screenProps} />)
       case 'start':
         return (<StartScreen {...screenProps} />)
       }
